@@ -23,16 +23,7 @@ public class Address {
 		return "Address [city=" + city + "]";
 	}
 	
-	@PostConstruct
-	public void init()
-	{
-		System.out.println("Address class init method");
-	}
-	@PreDestroy
-	public void destroy()
-	{
-		System.out.println("Address class destroy method");
-	}
+	
 	
 
 }

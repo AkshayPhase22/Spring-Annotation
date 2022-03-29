@@ -1,5 +1,8 @@
 package com.demo.Spring;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Required;
@@ -49,5 +52,16 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [stdId=" + stdId + ", stdName=" + stdName + ", address=" + address + "]";
+	}
+	
+	@PostConstruct
+	public void init()
+	{
+		System.out.println("Address class init method");
+	}
+	@PreDestroy
+	public void destroy()
+	{
+		System.out.println("Address class destroy method");
 	}
 }
