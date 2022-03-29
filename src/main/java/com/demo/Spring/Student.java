@@ -57,11 +57,11 @@ public class Student {
 	@PostConstruct
 	public void init()
 	{
-		System.out.println("Address class init method");
+		System.out.println("Student class init method");
 	}
 	@PreDestroy
 	public void destroy()
 	{
-		System.out.println("Address class destroy method");
+		System.out.println("Student class destroy method");
 	}
 }
