@@ -31,7 +31,7 @@ public class Address {
 	@PreDestroy
 	public void destroy()
 	{
-		System.out.println("Address class init method");
+		System.out.println("Address class destroy method");
 	}
 	
 
